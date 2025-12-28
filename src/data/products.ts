@@ -38,10 +38,14 @@ const medalsImages = [
 ];
 
 // Water Bottles Images
-// 1-9 are 0x.jpg, 10-20 are x.jpg
+// Actual files present:
+// - 1-6 are .jpeg
+// - 7-14 are .jpg
+// - 21-26 are .jpg (newly added)
 const bottleImages = [
-  ...range(1, 9).map(i => `/assets/products/Water bottles/0${i}.jpg`),
-  ...range(10, 20).map(i => `/assets/products/Water bottles/${i}.jpg`)
+  ...range(1, 6).map(i => `/assets/products/Water bottles/${i}.jpeg`),
+  ...range(7, 14).map(i => `/assets/products/Water bottles/${i}.jpg`),
+  ...range(21, 26).map(i => `/assets/products/Water bottles/${i}.jpg`),
 ];
 
 export const products: Product[] = [
