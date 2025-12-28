@@ -1,7 +1,3 @@
-node_modules/
-build/
-dist/
-.DS_Store
 # Logs
 logs
 *.log
@@ -18,9 +14,6 @@ build
 
 # Environment variables
 .env
-.idea/
-.vscode/
-.trae/
 .env.local
 .env.*.local
 
