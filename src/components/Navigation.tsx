@@ -40,7 +40,7 @@ export function Navigation({ onLogoClick }: NavigationProps) {
           <button onClick={handleLogoClick} className="flex items-center gap-3">
             <div className="h-12 w-12 md:h-14 md:w-14 flex items-center justify-center">
               <img 
-                src="/assets/logo.jpeg" 
+                src="assets/logo.jpeg" 
                 alt="Corporate Genie Logo" 
                 className="h-12 w-12 md:h-14 md:w-14 object-contain"
               />

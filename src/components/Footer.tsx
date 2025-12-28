@@ -10,7 +10,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <img
-                src="/assets/logo.jpeg"
+                src="assets/logo.jpeg"
                 alt="Corporate Genie Logo"
                 className="h-12 w-12 md:h-14 md:w-14 object-contain"
               />
