@@ -43,9 +43,9 @@ const medalsImages = [
 // - 7-14 are .jpg
 // - 21-26 are .jpg (newly added)
 const bottleImages = [
-  ...range(1, 6).map(i => `${import.meta.env.BASE_URL}assets/products/Water Bottles/${i}.jpeg`),
-  ...range(7, 14).map(i => `${import.meta.env.BASE_URL}assets/products/Water Bottles/${i}.jpg`),
-  ...range(21, 26).map(i => `${import.meta.env.BASE_URL}assets/products/Water Bottles/${i}.jpg`),
+  ...range(1, 6).map(i => `${import.meta.env.BASE_URL}assets/products/Water bottles/${i}.jpeg`),
+  ...range(7, 14).map(i => `${import.meta.env.BASE_URL}assets/products/Water bottles/${i}.jpg`),
+  ...range(21, 26).map(i => `${import.meta.env.BASE_URL}assets/products/Water bottles/${i}.jpg`),
 ];
 
 export const products: Product[] = [
