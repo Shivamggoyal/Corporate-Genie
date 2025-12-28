@@ -4,13 +4,14 @@ import { products } from '../data/products';
 
 export function Hero() {
   const sampleImages = products.flatMap(p => p.images.slice(0, 2)).slice(0, 8);
+  const base = import.meta.env.BASE_URL;
   const slideshow = [
-    'assets/Hero/1.png',
-    'assets/Hero/2.png',
-    'assets/Hero/3.png',
-    'assets/Hero/4.png',
-    'assets/Hero/5.png',
-    'assets/Hero/6.png',
+    `${base}assets/Hero/1.png`,
+    `${base}assets/Hero/2.png`,
+    `${base}assets/Hero/3.png`,
+    `${base}assets/Hero/4.png`,
+    `${base}assets/Hero/5.png`,
+    `${base}assets/Hero/6.png`,
   ];
   const [active, setActive] = useState(0);
   useEffect(() => {

@@ -7,34 +7,34 @@ const range = (start: number, end: number) =>
 // Desktop Essentials Images
 // 1-8 are .jpeg, 9 is .jpg, 10-35 are .jpg
 const desktopImages = [
-  ...range(1, 8).map(i => `assets/products/desktop/${i}.jpeg`),
-  `assets/products/desktop/9.jpg`,
-  ...range(10, 35).map(i => `assets/products/desktop/${i}.jpg`)
+  ...range(1, 8).map(i => `${import.meta.env.BASE_URL}assets/products/desktop/${i}.jpeg`),
+  `${import.meta.env.BASE_URL}assets/products/desktop/9.jpg`,
+  ...range(10, 35).map(i => `${import.meta.env.BASE_URL}assets/products/desktop/${i}.jpg`)
 ];
 
 // Employee Joining Kit Images
 // 1-133 are .jpg
-const joiningKitImages = range(1, 133).map(i => `assets/products/Employee joining kit/${i}.jpg`);
+const joiningKitImages = range(1, 133).map(i => `${import.meta.env.BASE_URL}assets/products/Employee joining kit/${i}.jpg`);
 
 // Custom T-Shirts Images
 // 1 is 01.jpg, 2 is 2.png, 3 is 3.png, 4-28 are .webp
 const tshirtImages = [
-  `assets/products/tshirts/01.jpg`,
-  `assets/products/tshirts/2.png`,
-  `assets/products/tshirts/3.png`,
-  ...range(4, 28).map(i => `assets/products/tshirts/${i}.webp`)
+  `${import.meta.env.BASE_URL}assets/products/tshirts/01.jpg`,
+  `${import.meta.env.BASE_URL}assets/products/tshirts/2.png`,
+  `${import.meta.env.BASE_URL}assets/products/tshirts/3.png`,
+  ...range(4, 28).map(i => `${import.meta.env.BASE_URL}assets/products/tshirts/${i}.webp`)
 ];
 
 // Trophies Images
 // 2-263 are .jpg (exclude 1.jpg per requirement)
-const trophiesImages = range(2, 263).map(i => `assets/products/Trophies/${i}.jpg`);
+const trophiesImages = range(2, 263).map(i => `${import.meta.env.BASE_URL}assets/products/Trophies/${i}.jpg`);
 
 // Medals Images
 // 1-9 are 0x.webp, 10-27 are x.webp, 28-35 are .jpg
 const medalsImages = [
-  ...range(1, 9).map(i => `assets/products/Medals/0${i}.webp`),
-  ...range(10, 27).map(i => `assets/products/Medals/${i}.webp`),
-  ...range(28, 35).map(i => `assets/products/Medals/${i}.jpg`)
+  ...range(1, 9).map(i => `${import.meta.env.BASE_URL}assets/products/Medals/0${i}.webp`),
+  ...range(10, 27).map(i => `${import.meta.env.BASE_URL}assets/products/Medals/${i}.webp`),
+  ...range(28, 35).map(i => `${import.meta.env.BASE_URL}assets/products/Medals/${i}.jpg`)
 ];
 
 // Water Bottles Images
@@ -43,9 +43,9 @@ const medalsImages = [
 // - 7-14 are .jpg
 // - 21-26 are .jpg (newly added)
 const bottleImages = [
-  ...range(1, 6).map(i => `assets/products/Water Bottles/${i}.jpeg`),
-  ...range(7, 14).map(i => `assets/products/Water Bottles/${i}.jpg`),
-  ...range(21, 26).map(i => `assets/products/Water Bottles/${i}.jpg`),
+  ...range(1, 6).map(i => `${import.meta.env.BASE_URL}assets/products/Water Bottles/${i}.jpeg`),
+  ...range(7, 14).map(i => `${import.meta.env.BASE_URL}assets/products/Water Bottles/${i}.jpg`),
+  ...range(21, 26).map(i => `${import.meta.env.BASE_URL}assets/products/Water Bottles/${i}.jpg`),
 ];
 
 export const products: Product[] = [
