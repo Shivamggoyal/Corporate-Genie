@@ -48,6 +48,12 @@ const bottleImages = [
   ...range(21, 26).map(i => `${import.meta.env.BASE_URL}assets/products/Water bottles/${i}.jpg`),
 ];
 
+// Flags Images (files are 1-5 as .JPG)
+const flagsImages = range(1, 5).map(i => `${import.meta.env.BASE_URL}assets/products/Flags/${i}.JPG`);
+
+// Pens Images (files are 1-9 as .HEIC)
+const pensImages = range(1, 9).map(i => `${import.meta.env.BASE_URL}assets/products/Pens/${i}.HEIC`);
+
 export const products: Product[] = [
   {
     id: 'desktop',
@@ -84,5 +90,17 @@ export const products: Product[] = [
     title: 'Water Bottles',
     description: 'Eco-friendly branded water bottles and hydration solutions. Custom printed stainless steel and plastic bottles for corporate gifting and employee wellness programs.',
     images: bottleImages
+  },
+  {
+    id: 'flags',
+    title: 'Flags',
+    description: 'Custom printed flags for corporate events, branding, and promotions. High-quality materials and vibrant colors suitable for indoor and outdoor use.',
+    images: flagsImages
+  },
+  {
+    id: 'pens',
+    title: 'Pens',
+    description: 'Premium branded pens for corporate gifting and office use. Custom logo printing available across a range of finishes and materials.',
+    images: pensImages
   }
 ];

@@ -42,7 +42,7 @@ export default function App() {
       <Navigation />
       <Hero />
       <ProductCards products={products} onSelectProduct={setSelectedProduct} />
-      <section className="relative py-16">
+      <section className="relative py-16" id="how-it-works">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-8">
             <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-5 py-2.5 rounded-full shadow-sm border border-gray-200/60">
@@ -98,6 +98,7 @@ export default function App() {
           </div>
         </div>
       </section>
+      <ContactForm />
       <Footer />
       <ContactForm />
       <WhatsAppButton />
