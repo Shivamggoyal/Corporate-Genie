@@ -17,7 +17,8 @@ export function HeicImage({ src, alt, className, onClick }: HeicImageProps) {
     (async () => {
       try {
         const res = await fetch(src);
-        const blob = await res.blob();
+        const ab = await res.arrayBuffer();
+        const blob = new Blob([ab], { type: 'image/heic' });
         const heic2any = (await import('heic2any')).default;
         const output = await heic2any({ blob, toType: 'image/jpeg', quality: 0.8 });
         const outBlob = Array.isArray(output) ? output[0] as Blob : (output as Blob);
