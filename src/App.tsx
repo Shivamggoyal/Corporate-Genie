@@ -9,6 +9,7 @@ import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
 import { products } from './data/products';
 import { Search, PenTool, CheckCircle, Truck } from 'lucide-react';
+import { trackWhatsAppClick } from './utils/analytics';
 
 export interface Product {
   id: string;

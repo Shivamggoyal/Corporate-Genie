@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Sparkles, Award, Shirt, Package, MessageCircle, ArrowRight } from 'lucide-react';
 import { products } from '../data/products';
+import { trackWhatsAppClick } from '../utils/analytics';
 
 export function Hero() {
   const sampleImages = products.flatMap(p => p.images.slice(0, 2)).slice(0, 8);

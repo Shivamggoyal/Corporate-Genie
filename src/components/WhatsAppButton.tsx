@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MessageCircle, X } from 'lucide-react';
+import { trackWhatsAppClick } from '../utils/analytics';
 
 export function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleChatStart = () => {
+    trackWhatsAppClick('Floating Button');
+  };
 
   return (
     <>
@@ -55,6 +60,7 @@ export function WhatsAppButton() {
               href="https://wa.me/919205356196?text=Hi! I'm interested in learning more about your corporate merchandise."
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleChatStart}
               className="block w-full bg-gradient-to-r from-green-500 to-green-600 text-white text-center py-3 rounded-lg hover:shadow-lg transition-shadow"
             >
               Start WhatsApp Chat

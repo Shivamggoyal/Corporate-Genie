@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ArrowLeft, MessageCircle, ZoomIn } from 'lucide-react';
 import { Product } from '../App';
 import { SEO } from './SEO';
+import { trackWhatsAppClick } from '../utils/analytics';
 
 interface ProductGalleryProps {
   product: Product;
@@ -39,9 +40,10 @@ export function ProductGallery({ product, onBack }: ProductGalleryProps) {
             {product.description}
           </p>
           <a
-            href="https://wa.me/9205356196"
+            href="https://wa.me/919205356196"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick('Product Page - Main', product.title)}
             className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-8 py-4 rounded-full hover:shadow-xl transition-shadow"
           >
             <MessageCircle className="w-5 h-5" />
@@ -70,13 +72,14 @@ export function ProductGallery({ product, onBack }: ProductGalleryProps) {
               </div>
               
               <a
-                href={`https://wa.me/919205356196?text=${encodeURIComponent(
-                  `Hello, I am interested in this product: ${product.title}. Please provide a quote.`
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative z-10 flex items-center justify-center gap-1.5 bg-green-500 hover:bg-green-600 text-white py-2 px-3 rounded-lg transition-colors font-medium shadow-sm hover:shadow-md text-xs w-full"
-              >
+                  href={`https://wa.me/919205356196?text=${encodeURIComponent(
+                    `Hello, I am interested in this product: ${product.title}. Please provide a quote.`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackWhatsAppClick('Product Page - Related', product.title)}
+                  className="relative z-10 flex items-center justify-center gap-1.5 bg-green-500 hover:bg-green-600 text-white py-2 px-3 rounded-lg transition-colors font-medium shadow-sm hover:shadow-md text-xs w-full"
+                >
                 <MessageCircle className="w-3.5 h-3.5" />
                 <span>Get Quote</span>
               </a>
