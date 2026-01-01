@@ -7,6 +7,7 @@ import { ProductGallery } from './components/ProductGallery';
 import { WhatsAppButton } from './components/WhatsAppButton';
 import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
+import { ContactForm } from './components/ContactForm';
 import { products } from './data/products';
 import { Search, PenTool, CheckCircle, Truck, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { trackWhatsAppClick } from './utils/analytics';
@@ -98,6 +99,7 @@ export default function App() {
         </div>
       </section>
       <Footer />
+      <ContactForm />
       <WhatsAppButton />
     </div>
   );
