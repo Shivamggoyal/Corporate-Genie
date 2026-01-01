@@ -112,14 +112,6 @@ export function Hero() {
             ))}
           </div>
         </div>
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 md:hidden">
-          {slideshow.map((_, i) => (
-            <span
-              key={i}
-              className={`h-2 w-2 rounded-full ${active === i ? 'bg-cyan-600' : 'bg-cyan-600/40'}`}
-            />
-          ))}
-        </div>
       </div>
     </section>
   );
