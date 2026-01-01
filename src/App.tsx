@@ -21,6 +21,11 @@ export interface Product {
 
 export default function App() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  React.useEffect(() => {
+    if (selectedProduct) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [selectedProduct]);
 
   if (selectedProduct) {
     return (

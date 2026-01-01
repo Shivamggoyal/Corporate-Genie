@@ -4,7 +4,7 @@ interface HeicImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
 }
 
-export function HeicImage({ src, alt, className, onClick }: HeicImageProps) {
+export function HeicImage({ src, alt, className, onClick, ...rest }: HeicImageProps) {
   const [resolvedSrc, setResolvedSrc] = React.useState<string>(src);
 
   React.useEffect(() => {
@@ -34,5 +34,5 @@ export function HeicImage({ src, alt, className, onClick }: HeicImageProps) {
     };
   }, [src]);
 
-  return <img src={resolvedSrc} alt={alt} className={className} onClick={onClick} />;
+  return <img src={resolvedSrc} alt={alt} className={className} onClick={onClick} {...rest} />;
 }

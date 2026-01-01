@@ -4,6 +4,7 @@ import { Product } from '../App';
 import { SEO } from './SEO';
 import { trackWhatsAppClick } from '../utils/analytics';
 import { HeicImage } from './HeicImage';
+import { motion } from 'motion/react';
 
 interface ProductGalleryProps {
   product: Product;
@@ -14,7 +15,12 @@ export function ProductGallery({ product, onBack }: ProductGalleryProps) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white pt-24 pb-12 px-6">
+    <motion.div
+      initial={{ opacity: 0, y: 24 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
+      className="min-h-screen bg-gradient-to-b from-cyan-50 to-white pt-24 pb-12 px-6"
+    >
       <SEO 
         title={product.title}
         description={product.description}
@@ -64,6 +70,8 @@ export function ProductGallery({ product, onBack }: ProductGalleryProps) {
                   src={image}
                   alt={`${product.title} ${index + 1}`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="bg-white/90 backdrop-blur-sm p-2 rounded-full">
@@ -166,9 +174,10 @@ export function ProductGallery({ product, onBack }: ProductGalleryProps) {
             alt="Full size"
             className="max-w-full max-h-full object-contain rounded-2xl"
             onClick={(e) => e.stopPropagation()}
+            decoding="async"
           />
         </div>
       )}
-    </div>
+    </motion.div>
   );
 }
