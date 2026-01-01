@@ -48,13 +48,13 @@ export function Hero() {
             </div>
 
             <h1 className="text-5xl md:text-6xl font-semibold leading-tight">
-              <span className="bg-gradient-to-r from-cyan-700 to-blue-700 bg-clip-text text-transparent">Elevate Your Brand</span>
+              <span className="bg-gradient-to-r from-cyan-700 to-blue-700 bg-clip-text text-transparent">Premium Corporate Gifts</span>
               <br />
-              With Stunning Corporate Merchandise
+              <span className="text-gray-900">Supplier in India</span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-700 max-w-xl">
-              From desktop essentials to award-winning trophies, we craft memorable branded products that customers love and teams proudly use.
+              Leading corporate gifts manufacturer in Delhi NCR. Custom merchandise, employee joining kits, branded apparel, trophies & awards. Fast delivery across India with premium quality guaranteed.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -62,7 +62,13 @@ export function Hero() {
                 <span>Explore Products</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <a href="https://wa.me/919205356196" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-cyan-600 text-cyan-700 px-6 py-3 rounded-xl hover:bg-cyan-50 transition-all">
+              <a 
+                href="https://wa.me/919205356196" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                onClick={() => trackWhatsAppClick('Hero Section')}
+                className="inline-flex items-center gap-2 border border-cyan-600 text-cyan-700 px-6 py-3 rounded-xl hover:bg-cyan-50 transition-all"
+              >
                 <MessageCircle className="w-5 h-5" />
                 <span>Get Quote on WhatsApp</span>
               </a>

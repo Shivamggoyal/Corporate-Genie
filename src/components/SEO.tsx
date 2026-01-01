@@ -11,10 +11,10 @@ interface SEOProps {
 }
 
 export const SEO: React.FC<SEOProps> = ({
-  title = "Corporate Genie - Premium Corporate Gifts & Merchandise",
-  description = "Corporate Genie offers high-quality corporate gifts, custom merchandise, and promotional products for businesses. Fast delivery and premium quality guaranteed.",
-  keywords = "corporate gifts, custom merchandise, business gifts, promotional products, employee kits, corporate genie, corporate branding",
-  image = "/assets/logo.jpeg", // Assuming a default logo exists, we might need to verify this path
+  title = "Corporate Genie - Premium Corporate Gifts & Custom Merchandise India | Delhi NCR",
+  description = "Leading corporate gifts supplier in India. Custom merchandise, employee welcome kits, branded apparel, trophies & awards. Fast delivery across Delhi NCR. Premium quality guaranteed.",
+  keywords = "corporate gifts India, custom merchandise Delhi, employee joining kits, branded t-shirts, corporate trophies, custom medals, promotional products India, business gifts NCR, branded water bottles, desk essentials",
+  image = "/assets/logo.jpeg",
   url = "https://corporategenie.co.in/",
   type = "website"
 }) => {

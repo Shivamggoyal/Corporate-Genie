@@ -8,7 +8,7 @@ import { WhatsAppButton } from './components/WhatsAppButton';
 import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
 import { products } from './data/products';
-import { Search, PenTool, CheckCircle, Truck } from 'lucide-react';
+import { Search, PenTool, CheckCircle, Truck, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { trackWhatsAppClick } from './utils/analytics';
 
 export interface Product {
@@ -89,6 +89,7 @@ export default function App() {
               href="https://wa.me/919205356196?text=Hi%20Corporate%20Genie%2C%20I%27d%20like%20to%20start%20a%20merch%20order."
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick('Home Page - Start Project')}
               className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-6 py-3 rounded-xl shadow-sm hover:shadow-md transition-all"
             >
               <span>Start a Project on WhatsApp</span>

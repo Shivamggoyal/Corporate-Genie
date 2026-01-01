@@ -134,9 +134,10 @@ export function ProductGallery({ product, onBack }: ProductGalleryProps) {
             Get in touch with us to discuss your requirements and get a custom quote
           </p>
           <a
-            href="https://wa.me/9205356196"
+            href="https://wa.me/919205356196"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick('Product Page - CTA', product.title)}
             className="inline-flex items-center gap-2 bg-white text-cyan-600 px-8 py-4 rounded-full hover:shadow-2xl transition-shadow"
           >
             <MessageCircle className="w-5 h-5" />

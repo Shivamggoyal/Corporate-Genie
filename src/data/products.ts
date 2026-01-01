@@ -52,37 +52,37 @@ export const products: Product[] = [
   {
     id: 'desktop',
     title: 'Desktop Essentials',
-    description: 'Premium quality desk accessories to elevate your workspace',
+    description: 'Premium corporate desk accessories and office supplies. Custom branded stationery, desk organizers, and workspace essentials for employee gifting in Delhi NCR.',
     images: desktopImages
   },
   {
     id: 'joining-kit',
     title: 'Employee Joining Kit',
-    description: 'Make a lasting first impression with custom welcome kits',
+    description: 'Custom employee welcome kits and onboarding packages. Branded merchandise bundles for new hires including desk essentials, apparel, and company swag across India.',
     images: joiningKitImages
   },
   {
     id: 'tshirts',
     title: 'Custom T-Shirts',
-    description: 'High-quality branded apparel for teams and events',
+    description: 'High-quality branded t-shirts and corporate apparel. Custom printed polo shirts, crew necks, and team uniforms for corporate events and employee gifting in Delhi.',
     images: tshirtImages
   },
   {
     id: 'trophies',
     title: 'Trophies & Awards',
-    description: 'Recognize excellence with stunning custom trophies',
+    description: 'Custom corporate trophies, awards, and recognition items. Premium acrylic, crystal, and metal trophies for employee appreciation and company events in India.',
     images: trophiesImages
   },
   {
     id: 'medals',
     title: 'Custom Medals',
-    description: 'Celebrate achievements with personalized medals',
+    description: 'Personalized medals and lapel pins for corporate recognition. Custom engraved medals for achievements, service awards, and special accomplishments.',
     images: medalsImages
   },
   {
     id: 'bottles',
     title: 'Water Bottles',
-    description: 'Eco-friendly branded bottles for your team',
+    description: 'Eco-friendly branded water bottles and hydration solutions. Custom printed stainless steel and plastic bottles for corporate gifting and employee wellness programs.',
     images: bottleImages
   }
 ];
