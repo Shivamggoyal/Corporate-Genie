@@ -92,14 +92,6 @@ export function Hero() {
                 className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-[1400ms] ${active === i ? 'opacity-100' : 'opacity-0'} p-6`}
               />
             ))}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-              {slideshow.map((_, i) => (
-                <span
-                  key={i}
-                  className={`h-2 w-2 rounded-full ${active === i ? 'bg-cyan-600' : 'bg-cyan-600/40'}`}
-                />
-              ))}
-            </div>
           </div>
         </div>
 
