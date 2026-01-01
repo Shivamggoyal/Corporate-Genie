@@ -33,6 +33,7 @@ export const SEO: React.FC<SEOProps> = ({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="author" content="Corporate Genie" />
+      <meta name="robots" content="index,follow" />
       <link rel="canonical" href={url} />
 
       {/* Open Graph / Facebook */}
