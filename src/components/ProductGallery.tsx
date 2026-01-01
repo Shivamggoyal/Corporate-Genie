@@ -3,6 +3,7 @@ import { ArrowLeft, MessageCircle, ZoomIn } from 'lucide-react';
 import { Product } from '../App';
 import { SEO } from './SEO';
 import { trackWhatsAppClick } from '../utils/analytics';
+import { HeicImage } from './HeicImage';
 
 interface ProductGalleryProps {
   product: Product;
@@ -59,7 +60,7 @@ export function ProductGallery({ product, onBack }: ProductGalleryProps) {
                 className="group relative aspect-square overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
                 onClick={() => setSelectedImage(image)}
               >
-                <img
+                <HeicImage
                   src={image}
                   alt={`${product.title} ${index + 1}`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -160,7 +161,7 @@ export function ProductGallery({ product, onBack }: ProductGalleryProps) {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          <img
+          <HeicImage
             src={selectedImage}
             alt="Full size"
             className="max-w-full max-h-full object-contain rounded-2xl"

@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, useInView } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { Product } from '../App';
+import { HeicImage } from './HeicImage';
 
 interface ProductCardsProps {
   products: Product[];
@@ -40,7 +41,7 @@ export function ProductCards({ products, onSelectProduct }: ProductCardsProps) {
             >
               {/* Image */}
               <div className="relative h-80 overflow-hidden">
-                <img
+                <HeicImage
                   src={product.images[0]}
                   alt={product.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
