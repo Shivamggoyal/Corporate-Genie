@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
+import { SEO } from './components/SEO';
 import { Hero } from './components/Hero';
 import { ProductCards } from './components/ProductCards';
 import { ProductGallery } from './components/ProductGallery';
@@ -34,6 +36,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO />
       <Navigation />
       <Hero />
       <ProductCards products={products} onSelectProduct={setSelectedProduct} />

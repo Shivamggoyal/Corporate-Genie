@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shivamggoyal.github.io/Corporate-Genie/sitemap.xml

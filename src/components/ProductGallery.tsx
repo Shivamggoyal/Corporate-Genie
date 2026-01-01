@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowLeft, MessageCircle, ZoomIn } from 'lucide-react';
 import { Product } from '../App';
+import { SEO } from './SEO';
 
 interface ProductGalleryProps {
   product: Product;
@@ -12,6 +13,11 @@ export function ProductGallery({ product, onBack }: ProductGalleryProps) {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white pt-24 pb-12 px-6">
+      <SEO 
+        title={product.title}
+        description={product.description}
+        image={product.images[0]}
+      />
       <div className="max-w-7xl mx-auto">
         {/* Back Button */}
         <button
