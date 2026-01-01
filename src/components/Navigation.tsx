@@ -66,7 +66,7 @@ export function Navigation({ onLogoClick }: NavigationProps) {
           </div>
 
           <a
-            href="https://wa.me/9205356196"
+            href="https://wa.me/919205356196"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-5 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow"

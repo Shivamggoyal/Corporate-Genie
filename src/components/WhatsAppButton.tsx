@@ -52,7 +52,7 @@ export function WhatsAppButton() {
             </p>
 
             <a
-              href="https://wa.me/9205356196?text=Hi! I'm interested in learning more about your corporate merchandise."
+              href="https://wa.me/919205356196?text=Hi! I'm interested in learning more about your corporate merchandise."
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full bg-gradient-to-r from-green-500 to-green-600 text-white text-center py-3 rounded-lg hover:shadow-lg transition-shadow"

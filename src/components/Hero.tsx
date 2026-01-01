@@ -61,7 +61,7 @@ export function Hero() {
                 <span>Explore Products</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <a href="https://wa.me/9205356196" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-cyan-600 text-cyan-700 px-6 py-3 rounded-xl hover:bg-cyan-50 transition-all">
+              <a href="https://wa.me/919205356196" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-cyan-600 text-cyan-700 px-6 py-3 rounded-xl hover:bg-cyan-50 transition-all">
                 <MessageCircle className="w-5 h-5" />
                 <span>Get Quote on WhatsApp</span>
               </a>

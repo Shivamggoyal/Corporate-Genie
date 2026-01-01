@@ -85,7 +85,7 @@ export default function App() {
           </div>
           <div className="mt-8">
             <a
-              href="https://wa.me/9205356196?text=Hi%20Corporate%20Genie%2C%20I%27d%20like%20to%20start%20a%20merch%20order."
+              href="https://wa.me/919205356196?text=Hi%20Corporate%20Genie%2C%20I%27d%20like%20to%20start%20a%20merch%20order."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-6 py-3 rounded-xl shadow-sm hover:shadow-md transition-all"

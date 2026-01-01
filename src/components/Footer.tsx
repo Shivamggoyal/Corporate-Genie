@@ -21,7 +21,7 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://wa.me/9205356196"
+                href="https://wa.me/919205356196"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors"

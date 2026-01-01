@@ -70,7 +70,7 @@ export function ProductGallery({ product, onBack }: ProductGalleryProps) {
               </div>
               
               <a
-                href={`https://wa.me/9205356196?text=${encodeURIComponent(
+                href={`https://wa.me/919205356196?text=${encodeURIComponent(
                   `Hello, I am interested in this product: ${product.title}. Please provide a quote.`
                 )}`}
                 target="_blank"
