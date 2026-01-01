@@ -100,7 +100,6 @@ export default function App() {
       </section>
       <ContactForm />
       <Footer />
-      <ContactForm />
       <WhatsAppButton />
     </div>
   );

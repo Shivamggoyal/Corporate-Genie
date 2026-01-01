@@ -51,8 +51,8 @@ const bottleImages = [
 // Flags Images (files are 1-5 as .JPG)
 const flagsImages = range(1, 5).map(i => `${import.meta.env.BASE_URL}assets/products/Flags/${i}.JPG`);
 
-// Pens Images (files are 1-9 as .HEIC)
-const pensImages = range(1, 9).map(i => `${import.meta.env.BASE_URL}assets/products/Pens/${i}.HEIC`);
+// Pens Images (converted to .jpg for cross-browser support)
+const pensImages = range(1, 9).map(i => `${import.meta.env.BASE_URL}assets/products/Pens/${i}.jpg`);
 
 export const products: Product[] = [
   {
