@@ -29,7 +29,7 @@ export function Footer() {
                 <Phone className="w-5 h-5" />
               </a>
               <a
-                href="mailto:amang.goyal007@gmail.com"
+                href="mailto:Corportegenie.india@gmail.com"
                 className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors"
               >
                 <Mail className="w-5 h-5" />
@@ -84,7 +84,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>amang.goyal007@gmail.com</span>
+                <span>Corportegenie.india@gmail.com</span>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
