@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Block access to development files
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /*.md$
+
+# Allow crawling of assets
+Allow: /assets/
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+Sitemap: https://corporategenie.co.in/sitemap.xml
