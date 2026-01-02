@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Sitemap: https://corporategenie.co.in/sitemap.xml
 
 User-agent: GPTBot
 Allow: /
@@ -30,17 +31,3 @@ Allow: /
 
 User-agent: Bytespider
 Allow: /
-
-# Block access to development files
-Disallow: /src/
-Disallow: /node_modules/
-Disallow: /*.json$
-Disallow: /*.md$
-
-# Allow crawling of assets
-Allow: /assets/
-
-# Crawl delay for respectful crawling
-Crawl-delay: 1
-
-Sitemap: https://corporategenie.co.in/sitemap.xml
