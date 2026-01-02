@@ -15,7 +15,7 @@ export const SEO: React.FC<SEOProps> = ({
   description = "Leading corporate gifts supplier in India. Custom merchandise, employee welcome kits, branded apparel, trophies & awards. Fast delivery across Delhi NCR. Premium quality guaranteed.",
   keywords = "corporate gifts India, custom merchandise Delhi, employee joining kits, branded t-shirts, corporate trophies, custom medals, promotional products India, business gifts NCR, branded water bottles, desk essentials",
   image = "/assets/logo.jpeg",
-  url = "https://corporategenie.co.in/",
+  url,
   type = "website"
 }) => {
   const siteTitle = title === "Corporate Genie - Premium Corporate Gifts & Merchandise" 
@@ -25,18 +25,20 @@ export const SEO: React.FC<SEOProps> = ({
   const fullImageUrl = image.startsWith('http') 
     ? image 
     : `${import.meta.env.BASE_URL}${image.startsWith('/') ? image.slice(1) : image}`;
+  
+  const canonicalUrl = url || (typeof window !== 'undefined' ? window.location.href : "https://corporategenie.co.in/");
 
   return (
     <Helmet>
-      {/* Standard Meta Tags */}
       <title>{siteTitle}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="author" content="Corporate Genie" />
       <meta name="robots" content="index,follow" />
-      <link rel="canonical" href={url} />
+      <meta name="googlebot" content="index,follow" />
+      <meta name="bingbot" content="index,follow" />
+      <link rel="canonical" href={canonicalUrl} />
 
-      {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url} />
       <meta property="og:title" content={siteTitle} />
@@ -44,7 +46,6 @@ export const SEO: React.FC<SEOProps> = ({
       <meta property="og:image" content={fullImageUrl} />
       <meta property="og:site_name" content="Corporate Genie" />
 
-      {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={url} />
       <meta property="twitter:title" content={siteTitle} />
