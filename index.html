@@ -35,7 +35,14 @@
   </head>
 
     <body>
+      <h1 id="seo-h1">Premium Corporate Gifts & Custom Merchandise in India</h1>
       <div id="root"></div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var h = document.getElementById('seo-h1');
+          if (h && h.parentNode) h.parentNode.removeChild(h);
+        });
+      </script>
       <script type="module" src="/src/main.tsx"></script>
     </body>
   </html>
